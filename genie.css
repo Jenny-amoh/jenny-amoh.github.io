@@ -1,0 +1,180 @@
+@font-face {
+    src :url(/Users/jenner/Desktop/Genie/Assets4genie/Pluto/PlutoRegular.otf);
+    font-family: pluto;
+}
+@font-face {
+    font-family: pluto1;
+    src: url(/Users/jenner/Desktop/Genie/Assets4genie/Pluto/PlutoBold.otf);
+}
+body{
+    font-family: pluto;
+}
+.container1{
+    margin: auto;
+    height: 500px;
+    background-color: #ffff;
+}
+.paragraph{
+    font-family: pluto1;
+}
+.lead{
+    align-items: center;
+    padding: 0px 200px 0px 180px;
+}
+.container2{
+    background-color: rgb(24, 19, 55);
+    color: #ffff;
+    padding-bottom: 100px;
+}
+.container3{
+    background-color: rgb(24, 19, 55);
+    color: #ffff;
+    height: 450px;
+}
+.about-pic{
+    margin-top: -390px;
+    padding-right: 150px;
+}
+
+#navbar{
+    background-color: rgb(24, 19, 55);
+    color: #ffff;
+}
+#grid{
+    border-radius: 20px;
+}
+.card{
+    border-radius: 30px;
+    column-gap: 50px;
+    margin: 30px;
+    
+}
+.card-body{
+    padding: 50px;
+}
+.card-img-top{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+h3{
+    font-family: pluto1;
+    
+}
+.footer{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-right: 250px;
+}
+.footer2{
+    padding-right: 130px;
+}
+
+.picture{
+    background-image: url(Assets4genie/PM.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 20%; 
+    height: 120px;
+}
+.picture1{
+    background-image: url(Assets4genie/PMnotes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 50%; 
+    height: 120px;
+}
+.image1{
+    height: 20px;
+    width: 50px;
+} 
+.button9{
+    margin-top: -30px;
+    margin-right: -50px;
+    width: 250px;
+    height: 50px;
+    border-radius: 0px;
+}
+.button8{
+    width: 150px;
+    height: 50px;
+    padding-right: 20px;
+    border-radius: 0px;
+}
+.button5{
+    border-radius: 0px;
+}
+.container8{
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#border1{
+    height: 60px;
+    width: 450px;
+}
+#border2{
+    height: 400px;
+    width: 450px;
+    margin: auto;
+}
+.icons{
+    display: table-caption;
+}
+
+.table{
+    border: 15px;
+    padding: 25px;
+
+}
+#table{
+    display: table-caption;
+}
+.link-dark1{
+    text-decoration-style: dotted;
+    margin-top: 5px;
+}
+.insight3{
+    background-color: rgb(24, 19, 55);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 20%; 
+    height: 120px;
+}
+.composition-item {
+    margin-top: -25px;
+    margin-left: 20px;
+    padding-top: 40px !important;
+}
+.arrow{
+    padding-right: 50px;
+}
+.data-head{
+    font-weight: 100px;
+    
+}
+.contact-form{
+    color: #ccc;
+}
+.form{
+    padding-left: 50px;
+}
+.form-control{
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 0px;
+    height: 1px;
+}
+
+
+@media (min-width:768px) {
+    .w-md-50{
+        width: 50% !important;
+    }
+}
+
+.w-md-50{
+    padding: 20px;
+  margin: 20px 0px;
+  position: relative;
+}
