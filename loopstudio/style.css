@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@200&family=Poppins:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Poppins:wght@100&display=swap');
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.navbar {
+  font-family: 'Alata', sans-serif;
+  font-weight: 400;
+  z-index: 10000;
+}
+
+
+.intro {
+  background-image: url(images/desktop/image-hero.jpg);
+  height: 450px;
+  background-size: cover;
+  margin: auto;
+  margin-top: -80px;
+  font-family: 'Poppins';
+  font-weight: 48px;
+  width: 100%;
+
+}
+
+.intro-container {
+  position: relative;
+  height: 100%;
+}
+
+.intro-content {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 40px;
+  border: 2px solid white;
+  width: 25%;
+  padding: 20px;
+  padding-left: -20px;
+}
+
+.header {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 40px;
+}
+
+.paragraph {
+  font-family: 'Alata', sans-serif;
+  font-weight: 400;
+}
+
+.container1 {
+  padding-top: 50px;
+  margin-bottom: 50px;
+  height: 50px;
+  width: 100px;
+}
+
+.container2 {
+  width: 400pt;
+  margin-top: 300px;
+  margin-left: 450px;
+  border: 2px solid white;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.container4 {
+  padding-top: 50px;
+}
+
+.container5 {
+  padding-top: 100px;
+}
+
+#button {
+  border-radius: 0px;
+  width: 150px;
+  height: 40px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 15px;
+  margin-left: 650px;
+
+}
+
+.images {
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+  font-size: 25px;
+  line-height: 25px;
+  color: #ccc;
+  width: 50%;
+  bottom: 15px;
+  left: 20px;
+}
+
+.images:hover img {
+  opacity: .4;
+  cursor: pointer;
+  color: hsl(0, 0%, 55%);
+}
+
+.images:hover .text {
+
+  color: black;
+}
+
+/* .footer {
+  margin-left: 500px;
+} */
+
+.nav-link {
+  /* position:absolute;
+    top: 0;
+    right:-10px;
+    bottom:0; */
+
+  /* border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #303030;
+    content: ""; */
+}
+
+
+
+.menu .underlining,
+.footer-links .underlining {
+  width: 40%;
+  height: 2px;
+  background-color: white;
+  margin: auto;
+  visibility: hidden;
+}
+
+.link:hover .underlining {
+  visibility: visible;
+}
