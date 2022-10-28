@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACEBOOK</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="face.css">
+    <link rel="stylesheet" href="valid.js">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 left">
+              <img src="fb.svg" alt="facebook" class="image w-75">
+                <h5>Connect with friends and the world with facebook</h5>
+
+            </div>
+            <div class="col-lg-5 text-center form-ontrol">
+                <form class="right" id="form" method="post" name="form" onsubmit="return valiated()">
+                    <div class="mb-3">
+                      
+                      <input autocomplete="off" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter your email" 
+                      name="email" onkeyup="email_Verify()">
+                      
+                    </div>
+                    <div id="email_error">Email is required</div>
+
+                    
+                    <div class="mb-3">
+                      
+                      <input type="password" class="form-control" id="password" aria-describedby="emailHelp" placeholder="Enter your password" name="password" 
+                      onkeyup="pass_Verify()">
+                    </div>
+                    <div id="pass_error">password should be atleast 8 characters</div>
+                    <div class="mb-3">
+                      <button type="button" class="btn btn-primary connexion" id="submitButton">Log In</button>
+                      
+                    </div>
+                   
+                  </form>
+                  <h2 style="color: green;" id="validText">Your Login was Successful </h2>
+
+                  
+                   
+
+              
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+
+    </div>
+
+
+<script>
+var email = document.forms['form']['email'];
+var password = document.forms['form']['password'];
+
+var email_error = document.getElementById('email_error');
+var pass_error = document.getElementById('pass_error');
+
+var btn = document.getElementById('submitButton');
+var form = document.getElementById("form")
+
+// email.addEventListener('change', email_Verify);
+// password.addEventListener('change', pass_Verify);
+
+var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+btn.addEventListener('click', submitForm);
+
+var emailIsValid = false;
+var passwordValid = false;
+var successText = document.getElementById("validText") 
+successText.style.display = "none"
+
+function submitForm() {
+  if (emailIsValid && passwordValid) {
+    successText.style.display = "block"
+    form.style.display = "none"
+    return;
+  }else if (!emailIsValid){
+      email.style.border = "1px solid red";
+      email_error.style.display = "block"
+      email.focus();
+  } else if (!passwordValid) {
+      password.style.border = "1px solid red";
+      pass_error.style.display = "block"
+      password.focus();
+  }
+}
+
+function validated(){
+  if (email.value.length < 9) {
+    email.style.border = "1px solid red";
+    email_error.style.display = "block"
+    email.focus();
+    return;
+  }
+
+  if (password.value.length < 6) {
+      password.style.border = "1px solid red";
+      pass_error.style.display = "block"
+      password.focus();
+      return;
+  }
+}
+
+function email_Verify(){
+    if (!email.value.match(validRegex)) {
+        email.style.border = "1px solid red";
+        email_error.style.display = "block";
+        email_error.html = "Email is not valid"
+        emailIsValid = false;
+    } else {
+        email.style.border = "1px solid blue";
+        email_error.style.display = "none";
+        emailIsValid = true;
+    }
+}
+
+  function pass_Verify(){
+    if (password.value.length <= 5 && password.value.length != 0) {
+        password.style.border = "1px solid red";
+        pass_error.style.display = "block"
+        password.focus();
+        passwordValid = false;
+        return;
+      }
+
+    if(password.value.length > 5) {
+      password.style.border = "1px solid blue";
+      pass_error.style.display = "none"
+      passwordValid = true;
+    }
+}
+</script>
+    
+</body>
+</html>

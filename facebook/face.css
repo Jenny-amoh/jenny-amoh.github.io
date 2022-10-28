@@ -1,0 +1,74 @@
+body{
+    background-color: #edf0f5;
+    font-family: arial;
+    font-size: 20px;
+}
+.left{
+    margin: 10%;
+    margin-top: 10%;
+}
+.front{
+    font-size: 55px;
+    color: #1877f2;
+    
+}
+.right{
+    border: gray 1px solid;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 25%;
+    box-shadow: rgb(105, 103, 103) 2px 5px 5px 5px;
+}
+.connexion{
+    width: 100%;
+    background-color: #1876f1;
+    color: white;
+}
+.btnn{
+    padding-top: 10px;
+    background-color: #42872A;
+    color: white;
+    border-radius: 0px;
+    border-color: #42872A;
+}
+.btnn:hover{
+    background-color: #83fc5a;
+    border-color: #83fc5a;
+    color: black;
+}
+h1{
+    color: #1876f1;
+    font-size: 68px;
+}
+h6{
+    padding-top: 10px;
+    font-size: 15px;
+
+}
+.card{
+    background-color:#edf0f5;
+    border: none;
+    padding-top: 10px;
+    
+}
+.form-control{
+    padding-top: 20px;
+}
+.right #email_error,
+.right #pass_error{
+    margin-top: 5px;
+    width: 406px;
+    font-size: 18px;
+    color: #c62828;
+    background-color: rgba(255, 0, 0, 0.1);
+    text-align: left;
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: 1px solid #EF9A9A;
+    display: none;
+
+}
+
+.form-control:focus, .form-control:active {
+    box-shadow: none !important;
+}
